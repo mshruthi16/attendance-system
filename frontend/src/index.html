@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attendance System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>📌 Attendance System</h1>
+
+    <!-- Create Class Section -->
+    <div class="section">
+        <h2>Create a New Class</h2>
+        <input type="text" id="className" placeholder="Enter Class Name">
+        <button onclick="createClass()">Create Class</button>
+        <p id="classResponse"></p>
+    </div>
+
+    <!-- Mark Attendance -->
+    <div class="section">
+        <h2>Mark Attendance</h2>
+        <input type="text" id="classId" placeholder="Enter Class ID">
+        <input type="text" id="uniqueNumber" placeholder="Enter Student Unique Number">
+        <button onclick="markAttendance()">Mark Attendance</button>
+        <p id="attendanceResponse"></p>
+    </div>
+
+    <!-- Upload CSV -->
+    <div class="section">
+        <h2>Upload CSV File</h2>
+        <input type="text" id="csvClassId" placeholder="Enter Class ID">
+        <input type="file" id="csvFile">
+        <button onclick="uploadCSV()">Upload CSV</button>
+        <p id="csvResponse"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
